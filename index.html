@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="A place to rest and meditate">
+    <meta name="keywords" content="dark souls, solaire, fromsoftware, bonfire">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+
+</head>
+<body style="background-color: rgb(58, 31, 44);">
+<img src="sol.gif" width="500" height="300" style="border-radius:5px;" alt="An image of Solaire resting at a bonfire">
+<audio controls loop src="Bonfire.mp3">
+</audio>
+<button onclick="clickCounter()" style="background-color: rgb(125, 91, 53); color: rgb(58, 31, 44); border-radius:5px; font-size:20px;"><b>Praise the Sun</b>
+<h1 id="clicks" style="color: rgb(58, 31, 44); font-size:20px;">0</h1>
+</button>
+
+<script>
+    var clicks = 0
+    function clickCounter(){
+    clicks += 1
+    document.getElementById("clicks").innerHTML = clicks + " <i>Praise!</i>"
+    }
+</script>
+
+<iframe style="border:0; border-radius:5px;" src="https://en.wikipedia.org/wiki/Solaire_of_Astora" height=300 width="500"></iframe>
+
+</body>
+
+</html>
